@@ -46,7 +46,7 @@ Name | Type |
 
 returns URLs to view in cloogle `res`'s _i_mplementation (icl) or _d_eclaration (dcl)
 
-Defined in: [main.ts:111](https://github.com/W95Psp/cloogle-js/blob/f829256/src/main.ts#L111)
+Defined in: [main.ts:111](https://github.com/W95Psp/cloogle-js/blob/62059bb/src/main.ts#L111)
 
 ___
 
@@ -64,7 +64,7 @@ Name | Type | Description |
 
 returns it's module path
 
-Defined in: [main.ts:104](https://github.com/W95Psp/cloogle-js/blob/f829256/src/main.ts#L104)
+Defined in: [main.ts:104](https://github.com/W95Psp/cloogle-js/blob/62059bb/src/main.ts#L104)
 
 ___
 
@@ -82,7 +82,7 @@ Name | Type |
 
 returns either a validation error, or a `Response` from Cloogle
 
-Defined in: [main.ts:96](https://github.com/W95Psp/cloogle-js/blob/f829256/src/main.ts#L96)
+Defined in: [main.ts:96](https://github.com/W95Psp/cloogle-js/blob/62059bb/src/main.ts#L96)
 
 ___
 
@@ -100,7 +100,7 @@ Name | Type |
 
 returns Cloogle's unprocessed, unvalidated response
 
-Defined in: [main.ts:88](https://github.com/W95Psp/cloogle-js/blob/f829256/src/main.ts#L88)
+Defined in: [main.ts:88](https://github.com/W95Psp/cloogle-js/blob/62059bb/src/main.ts#L88)
 
 ___
 
@@ -118,7 +118,7 @@ Name | Type | Description |
 
 returns either a validation error, or a `Response` from Cloogle
 
-Defined in: [main.ts:80](https://github.com/W95Psp/cloogle-js/blob/f829256/src/main.ts#L80)
+Defined in: [main.ts:80](https://github.com/W95Psp/cloogle-js/blob/62059bb/src/main.ts#L80)
 
 ___
 
@@ -136,7 +136,7 @@ Name | Type | Description |
 
 returns Cloogle's unprocessed, unvalidated response
 
-Defined in: [main.ts:70](https://github.com/W95Psp/cloogle-js/blob/f829256/src/main.ts#L70)
+Defined in: [main.ts:70](https://github.com/W95Psp/cloogle-js/blob/62059bb/src/main.ts#L70)
 
 ___
 
@@ -154,7 +154,7 @@ Name | Type | Description |
 
 a "short" string that sums up the information held by `r`
 
-Defined in: [main.ts:129](https://github.com/W95Psp/cloogle-js/blob/f829256/src/main.ts#L129)
+Defined in: [main.ts:129](https://github.com/W95Psp/cloogle-js/blob/62059bb/src/main.ts#L129)
 
 ___
 
@@ -172,22 +172,22 @@ Name | Type |
 
 the endpoint to the Cloogle API for `request`
 
-Defined in: [main.ts:42](https://github.com/W95Psp/cloogle-js/blob/f829256/src/main.ts#L42)
+Defined in: [main.ts:42](https://github.com/W95Psp/cloogle-js/blob/62059bb/src/main.ts#L42)
 
 ___
 
 ### strings\_of\_Response
 
-▸ `Const`**strings_of_Response**(`r`: { `data`: ([*FunctionResult*, [{ library: string; filename: string; modul: string; name: string; } & { `builtin`: *undefined* \| *boolean* ; `dcl_line`: *undefined* \| *number* ; `distance`: *undefined* \| *number* ; `documentation`: *undefined* \| *string* ; `icl_line`: *undefined* \| *number* ; `langrep_documentation`: *undefined* \| { clr\_version: string; clr\_section: string; }[]  }, { func: string; kind: ["Function"] \| ["Macro"] \| ["Constructor"] \| ["RecordField"] \| ["ClassMember"] \| ["ClassMacro"]; } & { `cls`: *undefined* \| { cls\_name: string; cls\_vars: string[]; } ; `constructor_of`: *undefined* \| *string* ; `generic_derivations`: *undefined* \| [*string*, [*string*, *string*, *string*, [*Just*, *number*] \| [*Nothing*], [*Just*, *number*] \| [*Nothing*]][]][] ; `generic_var_doc`: *undefined* \| *string*[] ; `param_doc`: *undefined* \| *string*[] ; `recordfield_of`: *undefined* \| *string* ; `required_context`: *undefined* \| [*string*, [*string*, *string*, *string*, [*Just*, *number*] \| [*Nothing*], [*Just*, *number*] \| [*Nothing*]][]][] ; `result_doc`: *undefined* \| *string*[] ; `throws_doc`: *undefined* \| *string*[] ; `type_doc`: *undefined* \| *string* ; `unifier`: *undefined* \| { left\_to\_right: [string, string][]; right\_to\_left: [string, string][]; used\_synonyms: [string, string][]; }  }]] \| [*TypeResult*, [{ library: string; filename: string; modul: string; name: string; } & { `builtin`: *undefined* \| *boolean* ; `dcl_line`: *undefined* \| *number* ; `distance`: *undefined* \| *number* ; `documentation`: *undefined* \| *string* ; `icl_line`: *undefined* \| *number* ; `langrep_documentation`: *undefined* \| { clr\_version: string; clr\_section: string; }[]  }, { type: string; type\_instances: [string, string[], [string, string, string, ["Just", number] \| ["Nothing"], ["Just", number] \| ["Nothing"]][]][]; type\_derivations: [string, [...][]][]; } & { `type_constructor_doc`: *undefined* \| ([*Nothing*] \| [*Just*, *string*])[] ; `type_field_doc`: *undefined* \| ([*Nothing*] \| [*Just*, *string*])[] ; `type_representation_doc`: *undefined* \| *string*  }]] \| [*ClassResult*, [{ library: string; filename: string; modul: string; name: string; } & { `builtin`: *undefined* \| *boolean* ; `dcl_line`: *undefined* \| *number* ; `distance`: *undefined* \| *number* ; `documentation`: *undefined* \| *string* ; `icl_line`: *undefined* \| *number* ; `langrep_documentation`: *undefined* \| { clr\_version: string; clr\_section: string; }[]  }, { class\_name: string; class\_heading: string; class\_funs: string[]; class\_instances: [string[], [string, string, string, ["Just", number] \| ["Nothing"], ["Just", number] \| ["Nothing"]][]][]; } & { `class_fun_doc`: *undefined* \| ([*Nothing*] \| [*Just*, *string*])[]  }]] \| [*ModuleResult*, [{ library: string; filename: string; modul: string; name: string; } & { `builtin`: *undefined* \| *boolean* ; `dcl_line`: *undefined* \| *number* ; `distance`: *undefined* \| *number* ; `documentation`: *undefined* \| *string* ; `icl_line`: *undefined* \| *number* ; `langrep_documentation`: *undefined* \| { clr\_version: string; clr\_section: string; }[]  }, { module\_is\_core: boolean; }]] \| [*SyntaxResult*, [{ library: string; filename: string; modul: string; name: string; } & { `builtin`: *undefined* \| *boolean* ; `dcl_line`: *undefined* \| *number* ; `distance`: *undefined* \| *number* ; `documentation`: *undefined* \| *string* ; `icl_line`: *undefined* \| *number* ; `langrep_documentation`: *undefined* \| { clr\_version: string; clr\_section: string; }[]  }, { syntax\_title: string; syntax\_code: string[]; syntax\_examples: ({ example: string; bootstrap: string[]; requires\_itask\_compiler: boolean; } & { cleanjs\_start?: string \| undefined; })[]; }]] \| [*ABCInstructionResult*, [{ library: string; filename: string; modul: string; name: string; } & { `builtin`: *undefined* \| *boolean* ; `dcl_line`: *undefined* \| *number* ; `distance`: *undefined* \| *number* ; `documentation`: *undefined* \| *string* ; `icl_line`: *undefined* \| *number* ; `langrep_documentation`: *undefined* \| { clr\_version: string; clr\_section: string; }[]  }, { abc\_instruction: string; abc\_arguments: ["ABCArgument", ["ABCTypeLabel"] \| ["ABCTypeAStackOffset"] \| ["ABCTypeBStackOffset"] \| ["ABCTypeAStackSize"] \| ["ABCTypeBStackSize"] \| ... 4 more ... \| [...], boolean][]; }]] \| [*ProblemResult*, { problem\_key: string; problem\_title: string; problem\_description: string; problem\_solutions: string[]; problem\_examples: string[]; }])[] ; `msg`: *string*  } & { `more_available`: *undefined* \| *number* ; `suggestions`: *undefined* \| [{ unify?: string \| undefined; name?: string \| undefined; exactName?: string \| undefined; className?: string \| undefined; typeName?: string \| undefined; using?: string[] \| undefined; modules?: string[] \| undefined; ... 4 more ...; page?: number \| undefined; }, *number*][] ; `warnings`: *undefined* \| *string*[]  }): *string*[]
+▸ **strings_of_Response**(`r`: [*Response*](/docs/modules/types.md#response)): *string*[]
 
 #### Parameters:
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`r` | { `data`: ([*FunctionResult*, [{ library: string; filename: string; modul: string; name: string; } & { `builtin`: *undefined* \| *boolean* ; `dcl_line`: *undefined* \| *number* ; `distance`: *undefined* \| *number* ; `documentation`: *undefined* \| *string* ; `icl_line`: *undefined* \| *number* ; `langrep_documentation`: *undefined* \| { clr\_version: string; clr\_section: string; }[]  }, { func: string; kind: ["Function"] \| ["Macro"] \| ["Constructor"] \| ["RecordField"] \| ["ClassMember"] \| ["ClassMacro"]; } & { `cls`: *undefined* \| { cls\_name: string; cls\_vars: string[]; } ; `constructor_of`: *undefined* \| *string* ; `generic_derivations`: *undefined* \| [*string*, [*string*, *string*, *string*, [*Just*, *number*] \| [*Nothing*], [*Just*, *number*] \| [*Nothing*]][]][] ; `generic_var_doc`: *undefined* \| *string*[] ; `param_doc`: *undefined* \| *string*[] ; `recordfield_of`: *undefined* \| *string* ; `required_context`: *undefined* \| [*string*, [*string*, *string*, *string*, [*Just*, *number*] \| [*Nothing*], [*Just*, *number*] \| [*Nothing*]][]][] ; `result_doc`: *undefined* \| *string*[] ; `throws_doc`: *undefined* \| *string*[] ; `type_doc`: *undefined* \| *string* ; `unifier`: *undefined* \| { left\_to\_right: [string, string][]; right\_to\_left: [string, string][]; used\_synonyms: [string, string][]; }  }]] \| [*TypeResult*, [{ library: string; filename: string; modul: string; name: string; } & { `builtin`: *undefined* \| *boolean* ; `dcl_line`: *undefined* \| *number* ; `distance`: *undefined* \| *number* ; `documentation`: *undefined* \| *string* ; `icl_line`: *undefined* \| *number* ; `langrep_documentation`: *undefined* \| { clr\_version: string; clr\_section: string; }[]  }, { type: string; type\_instances: [string, string[], [string, string, string, ["Just", number] \| ["Nothing"], ["Just", number] \| ["Nothing"]][]][]; type\_derivations: [string, [...][]][]; } & { `type_constructor_doc`: *undefined* \| ([*Nothing*] \| [*Just*, *string*])[] ; `type_field_doc`: *undefined* \| ([*Nothing*] \| [*Just*, *string*])[] ; `type_representation_doc`: *undefined* \| *string*  }]] \| [*ClassResult*, [{ library: string; filename: string; modul: string; name: string; } & { `builtin`: *undefined* \| *boolean* ; `dcl_line`: *undefined* \| *number* ; `distance`: *undefined* \| *number* ; `documentation`: *undefined* \| *string* ; `icl_line`: *undefined* \| *number* ; `langrep_documentation`: *undefined* \| { clr\_version: string; clr\_section: string; }[]  }, { class\_name: string; class\_heading: string; class\_funs: string[]; class\_instances: [string[], [string, string, string, ["Just", number] \| ["Nothing"], ["Just", number] \| ["Nothing"]][]][]; } & { `class_fun_doc`: *undefined* \| ([*Nothing*] \| [*Just*, *string*])[]  }]] \| [*ModuleResult*, [{ library: string; filename: string; modul: string; name: string; } & { `builtin`: *undefined* \| *boolean* ; `dcl_line`: *undefined* \| *number* ; `distance`: *undefined* \| *number* ; `documentation`: *undefined* \| *string* ; `icl_line`: *undefined* \| *number* ; `langrep_documentation`: *undefined* \| { clr\_version: string; clr\_section: string; }[]  }, { module\_is\_core: boolean; }]] \| [*SyntaxResult*, [{ library: string; filename: string; modul: string; name: string; } & { `builtin`: *undefined* \| *boolean* ; `dcl_line`: *undefined* \| *number* ; `distance`: *undefined* \| *number* ; `documentation`: *undefined* \| *string* ; `icl_line`: *undefined* \| *number* ; `langrep_documentation`: *undefined* \| { clr\_version: string; clr\_section: string; }[]  }, { syntax\_title: string; syntax\_code: string[]; syntax\_examples: ({ example: string; bootstrap: string[]; requires\_itask\_compiler: boolean; } & { cleanjs\_start?: string \| undefined; })[]; }]] \| [*ABCInstructionResult*, [{ library: string; filename: string; modul: string; name: string; } & { `builtin`: *undefined* \| *boolean* ; `dcl_line`: *undefined* \| *number* ; `distance`: *undefined* \| *number* ; `documentation`: *undefined* \| *string* ; `icl_line`: *undefined* \| *number* ; `langrep_documentation`: *undefined* \| { clr\_version: string; clr\_section: string; }[]  }, { abc\_instruction: string; abc\_arguments: ["ABCArgument", ["ABCTypeLabel"] \| ["ABCTypeAStackOffset"] \| ["ABCTypeBStackOffset"] \| ["ABCTypeAStackSize"] \| ["ABCTypeBStackSize"] \| ... 4 more ... \| [...], boolean][]; }]] \| [*ProblemResult*, { problem\_key: string; problem\_title: string; problem\_description: string; problem\_solutions: string[]; problem\_examples: string[]; }])[] ; `msg`: *string*  } & { `more_available`: *undefined* \| *number* ; `suggestions`: *undefined* \| [{ unify?: string \| undefined; name?: string \| undefined; exactName?: string \| undefined; className?: string \| undefined; typeName?: string \| undefined; using?: string[] \| undefined; modules?: string[] \| undefined; ... 4 more ...; page?: number \| undefined; }, *number*][] ; `warnings`: *undefined* \| *string*[]  } | a Cloogle response   |
+`r` | [*Response*](/docs/modules/types.md#response) | a Cloogle response   |
 
 **Returns:** *string*[]
 
 a list of "short" strings that sums up informations held in `r.data`
 
-Defined in: [main.ts:152](https://github.com/W95Psp/cloogle-js/blob/f829256/src/main.ts#L152)
+Defined in: [main.ts:152](https://github.com/W95Psp/cloogle-js/blob/62059bb/src/main.ts#L152)
