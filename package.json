@@ -6,12 +6,12 @@
     "scripts": {
 	"build": "npx tsc",
 	"test": "npx ts-node examples/Tests.ts",
-	"doc": "npx typedoc --plugin typedoc-plugin-markdown --publicPath 'docs/' --readme README.t.md && cp docs/README.md README.md"
+	"doc": "npx typedoc --plugin typedoc-plugin-markdown --publicPath '/docs/' && tail -n +2 docs/modules.md > README.md"
     },
     "types": "dist/str/main.d.ts",
     "homepage": "https://github.com/W95Psp/cloogle-js",
     "author": "Lucas Franceschino",
-    "prepublishOnly": "npx tsc && npx typedoc --plugin typedoc-plugin-markdown --publicPath 'docs/' --readme README.t.md && cp docs/README.md README.md",
+    "prepublishOnly": "npx tsc && npx typedoc --plugin typedoc-plugin-markdown --publicPath '/docs/' --readme README.t.md && cp docs/README.md README.md",
     "license": "MIT",
     "devDependencies": {
 	"@types/node-fetch": "^2.5.8",

@@ -1,3 +1,10 @@
+/**
+ * TypeScript library for querying the [Clean](http://clean.cs.ru.nl/) language search engine, [Cloogle](https://cloogle.org/).
+ * 
+ * The types definition for the API are derived automatically from [the one defined in Clean by Cloogle](https://gitlab.science.ru.nl/cloogle/libcloogle/-/blob/master/Cloogle/API.dcl).
+ * @packageDocumentation
+ */
+
 // imports
 import fetch from 'node-fetch'
 import { Errors } from "io-ts";
@@ -32,7 +39,7 @@ const join = (s: string) => (x: string[]) => x.join(s);
  * @param request an object that represent a Cloogle request 
  * @returns the endpoint to the Cloogle API for `request`
 */
-export const stringifyRequest = (r: types.Request): string => {
+export function stringifyRequest(r: types.Request): string {
     const using = nmap(join(";"))(r.using);
     // exactName, typeName, className and using are encoded directly
     // into the `str` GET parameter (see https://gitlab.science.ru.nl/cloogle/cloogle-org/-/blob/604e7e80681c5c9a99bdfba8c63867f67d6af849/frontend/api.php#L190-206)
@@ -69,7 +76,7 @@ export async function raw_query_no_validation(parameters: string): Promise<any> 
 /**
  * @param parameters a string that represent the endpoint to be queried
  * @returns returns either a validation error, or a `Response` from Cloogle
-*/
+ */
 export async function raw_query(parameters: string): Promise<Either<Errors, types.Response>> {
     return validation.Response.decode(await raw_query_no_validation(parameters));
 }
@@ -77,21 +84,23 @@ export async function raw_query(parameters: string): Promise<Either<Errors, type
 /**
  * @param parameters a `Request` object that represent the endpoint to be queried
  * @returns returns Cloogle's unprocessed, unvalidated response
-*/
-export const query_no_validation = async (req: types.Request): Promise<any> =>
-    await raw_query(stringifyRequest(req));
+ */
+export async function query_no_validation(req: types.Request): Promise<any> {
+    return await raw_query(stringifyRequest(req));
+}
 
 /**
  * @param parameters a `Request` object that represent the endpoint to be queried
  * @returns returns either a validation error, or a `Response` from Cloogle
-*/
-export const query = async (req: types.Request): Promise<Either<Errors, types.Response>> =>
-    await raw_query(stringifyRequest(req));
+ */
+export async function query(req: types.Request): Promise<Either<Errors, types.Response>> {
+    return await raw_query(stringifyRequest(req));
+}
 
 /**
  * @param filename a Clean filename
  * @returns returns it's module path
-*/
+ */
 export const modulepath_of_filename = (filename: string): string =>
     filename.replace(/\.[id]cl$/, '').replace(/\./g, '/');
 
@@ -117,7 +126,7 @@ export function cloogle_url_of_BasicResult(res: types.BasicResult): { icl: URL, 
  * @param r - a Cloogle result
  * @returns a "short" string that sums up the information held by `r`
 */
-export const string_of_Result = (r: types.Result): string => {
+export function string_of_Result(r: types.Result): string {
     switch (r[0]) {
         case 'FunctionResult': return r[1][1].func;
         case 'TypeResult': return r[1][1].type;
@@ -140,7 +149,8 @@ export const string_of_Result = (r: types.Result): string => {
  * @param r - a Cloogle response
  * @returns a list of "short" strings that sums up informations held in `r.data`
 */
-export const strings_of_Response = (r: types.Response): string[] =>
-    r.data.map(string_of_Result);
+export function strings_of_Response(r: types.Response): string[] {
+    return r.data.map(string_of_Result);
+}
 
 
