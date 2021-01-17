@@ -9,6 +9,7 @@
 	"rootDir"           : "./",
 	"strict"            : true,
 	"alwaysStrict"      : true,
+	"preserveSymlinks"  : true,
 	// "noUnusedLocals"    : true,
 	// "noUnusedParameters": true,
 	"esModuleInterop"   : true

@@ -47,7 +47,7 @@ Name | Type |
 
 returns URLs to view in cloogle `res`'s _i_mplementation (icl) or _d_eclaration (dcl)
 
-Defined in: [main.ts:114](https://github.com/W95Psp/cloogle-js/blob/7f2ca09/src/main.ts#L114)
+Defined in: [main.ts:114](https://github.com/W95Psp/cloogle-js/blob/39040c5/src/main.ts#L114)
 
 ___
 
@@ -65,7 +65,7 @@ Name | Type | Description |
 
 returns it's module path
 
-Defined in: [main.ts:107](https://github.com/W95Psp/cloogle-js/blob/7f2ca09/src/main.ts#L107)
+Defined in: [main.ts:107](https://github.com/W95Psp/cloogle-js/blob/39040c5/src/main.ts#L107)
 
 ___
 
@@ -83,7 +83,7 @@ Name | Type |
 
 returns either a validation error, or a `Response` from Cloogle
 
-Defined in: [main.ts:99](https://github.com/W95Psp/cloogle-js/blob/7f2ca09/src/main.ts#L99)
+Defined in: [main.ts:99](https://github.com/W95Psp/cloogle-js/blob/39040c5/src/main.ts#L99)
 
 ___
 
@@ -101,7 +101,7 @@ Name | Type |
 
 returns Cloogle's unprocessed, unvalidated response
 
-Defined in: [main.ts:91](https://github.com/W95Psp/cloogle-js/blob/7f2ca09/src/main.ts#L91)
+Defined in: [main.ts:91](https://github.com/W95Psp/cloogle-js/blob/39040c5/src/main.ts#L91)
 
 ___
 
@@ -119,7 +119,7 @@ Name | Type | Description |
 
 returns either a validation error, or a `Response` from Cloogle
 
-Defined in: [main.ts:83](https://github.com/W95Psp/cloogle-js/blob/7f2ca09/src/main.ts#L83)
+Defined in: [main.ts:83](https://github.com/W95Psp/cloogle-js/blob/39040c5/src/main.ts#L83)
 
 ___
 
@@ -137,7 +137,7 @@ Name | Type | Description |
 
 returns Cloogle's unprocessed, unvalidated response
 
-Defined in: [main.ts:73](https://github.com/W95Psp/cloogle-js/blob/7f2ca09/src/main.ts#L73)
+Defined in: [main.ts:73](https://github.com/W95Psp/cloogle-js/blob/39040c5/src/main.ts#L73)
 
 ___
 
@@ -155,7 +155,7 @@ Name | Type | Description |
 
 a "short" string that sums up the information held by `r`
 
-Defined in: [main.ts:132](https://github.com/W95Psp/cloogle-js/blob/7f2ca09/src/main.ts#L132)
+Defined in: [main.ts:132](https://github.com/W95Psp/cloogle-js/blob/39040c5/src/main.ts#L132)
 
 ___
 
@@ -173,7 +173,7 @@ Name | Type |
 
 the endpoint to the Cloogle API for `request`
 
-Defined in: [main.ts:45](https://github.com/W95Psp/cloogle-js/blob/7f2ca09/src/main.ts#L45)
+Defined in: [main.ts:45](https://github.com/W95Psp/cloogle-js/blob/39040c5/src/main.ts#L45)
 
 ___
 
@@ -191,4 +191,4 @@ Name | Type | Description |
 
 a list of "short" strings that sums up informations held in `r.data`
 
-Defined in: [main.ts:155](https://github.com/W95Psp/cloogle-js/blob/7f2ca09/src/main.ts#L155)
+Defined in: [main.ts:155](https://github.com/W95Psp/cloogle-js/blob/39040c5/src/main.ts#L155)
